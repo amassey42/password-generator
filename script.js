@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 //global variables
 //Arrays of  numbers, special, upper and lowercase letters
 var charlegnth;
-var result ="";
+var result =[];
 var numberList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialList =["!", "@", "#", "$", "%", "^", "&", "*" ,"(", ")"];
 var lowerCaseList =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]; 
@@ -12,10 +12,6 @@ var upperCaseList =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 var charactersUsed = [];
 
 
-console.log(numberList);
-console.log(specialList);
-console.log(lowerCaseList);
-console.log(upperCaseList);
 
 //randomizes the numbers in the numberList variable
 // console.log (Math.floor(Math.random(numberList)*11));
@@ -75,6 +71,12 @@ if (useLower) {
 }
  console.log(charactersUsed)
 
+
+//pull out ammount of characters that the user chose
+ for (let i = 0; i < charlegnth; i++) {
+    console.log(Math.floor(Math.random()* charactersUsed))
+  
+ }
 
   
     return "password"
