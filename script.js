@@ -76,16 +76,10 @@ if (useLower) {
  for (let i = 0; i < charlegnth; i++) {
   var items = Math.floor(Math.random()* charactersUsed.length)
   result += charactersUsed[items]
-  
-  console.log(result)
  }
 
-  
     return result
   }
-
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -101,9 +95,9 @@ generateBtn.addEventListener("click", writePassword);
 // THEN I choose a length of at least 8 characters and no more than 128 characters
 //  WHEN asked for character types to include in the password
 // THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-// TODO: WHEN I answer each prompt
+// WHEN I answer each prompt
 // THEN my input should be validated and at least one character type should be selected
-// TODO: WHEN all prompts are answered
+// WHEN all prompts are answered
 // THEN a password is generated that matches the selected criteria
-// TODO: WHEN the password is generated
+// WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
