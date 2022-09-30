@@ -9,4 +9,4 @@ This project is a password generator. The program takes in user input and then g
  ![Password Generator Screenshot](./assets/Password-generator.PNG)
 
 ### Deployed website link
-[Password Generator]
+[Password Generator](https://amassey42.github.io/password-generator/)

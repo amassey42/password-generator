@@ -12,7 +12,6 @@ var upperCaseList =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 
 
-
 //randomizes the numbers in the numberList variable
 // console.log (Math.floor(Math.random(numberList)*11));
 
