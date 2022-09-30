@@ -9,7 +9,7 @@ var numberList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialList =["!", "@", "#", "$", "%", "^", "&", "*" ,"(", ")"];
 var lowerCaseList =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]; 
 var upperCaseList =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var charactersUsed = [];
+
 
 
 
@@ -27,7 +27,7 @@ function writePassword() {
 }
 
 function generatePassword(){
-  
+  var charactersUsed = [];
   var flag = true
 
   while(flag) {
@@ -70,15 +70,19 @@ if (useLower) {
   charactersUsed = charactersUsed.concat(lowerCaseList)
 }
  console.log(charactersUsed)
-
-
-//pull out ammount of characters that the user chose
- for (let i = 0; i < charlegnth; i++) {
-  var items = Math.floor(Math.random()* charactersUsed.length)
-  result += charactersUsed[items]
+ if (charactersUsed.length == 0){
+  charactersUsed = []
+  confirm("Please choose atleast 1 option.")
+  generatePassword()
+ } else{
+  //pull out ammount of characters that the user chose
+  for (let i = 0; i < charlegnth; i++) {
+    var items = Math.floor(Math.random()* charactersUsed.length)
+    result += charactersUsed[items]
+   }  
  }
+ return result
 
-    return result
   }
 
 // Add event listener to generate button
